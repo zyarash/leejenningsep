@@ -68,15 +68,15 @@ $(window).on("load", function() {
     setQuote();
     setInterval(function() { setQuote(); }, 2000);
 
-    //function setQuote() {
-    //    if (quoteIdx >= quotes.length) {
-    //        quoteIdx = 0;
-    //        console.log("yeh");
-    //    }
-    //    $("#quote").text(quotes[quoteIdx]);
-    //    $("#author").text(quoteAuthorDict[quotes[quoteIdx]]);
-    //    quoteIdx++;
-    //}
+    function setQuote() {
+        //if (quoteIdx >= quotes.length) {
+        //    quoteIdx = 0;
+        //    console.log("yeh");
+        //}
+        //$("#quote").text(quotes[quoteIdx]);
+        //$("#author").text(quoteAuthorDict[quotes[quoteIdx]]);
+        //quoteIdx++;
+    }
 
     // Video playing hack, kinda messy but it gets the job done
     var videos = $("video").get().reverse();
