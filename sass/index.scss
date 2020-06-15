@@ -34,7 +34,19 @@ h4 {
     width: 1070px;
     margin-left: 12px;
     font-size: 0.5em;
-    margin-bottom: 200px;
+}
+
+h5 {
+    display: inline-flex;
+    font-size: 2em;
+    width: 1070px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+        color: #ff0;
+    }
 }
 
 audio {
@@ -107,7 +119,7 @@ video {
 
 #text-column {
     height: 100%;
-    margin-top: 100px;
+    margin-top: 30%;
     width: 65%;
 }
 
@@ -122,6 +134,19 @@ video {
 
     &:hover {
         color: #ddd;
+    }
+}
+
+#quote-container {
+    display: flex;
+    align-items: center;
+    height: 270px;
+    font-style: italic;
+    font-size: 1.6em;
+    text-shadow: 5px 5px #000;
+
+    & > #quote {
+        font-weight: bold;
     }
 }
 

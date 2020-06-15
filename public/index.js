@@ -56,6 +56,28 @@ $(window).on("load", function() {
     }
     $("#marquee").html(marqueeOptions.join("&nbsp;".repeat(20)));
 
+    var quoteAuthorDict = {
+        "Get hit by a bus": "Robert Phiso",
+        "Waalazinga": "Maxwell UBUR",
+        "I listened to it": "Keith Sub Antix",
+        "Good bing bing bong music": "Nolan Syzy",
+        "Tom Flanders Oregon Trail. Macintosh Flanders click click space bar Tom. Fland gers. T o": "Yauvin Akeos"
+    }
+    var quotes = Object.keys(quoteAuthorDict);
+    var quoteIdx = 0;
+    setQuote();
+    setInterval(function() { setQuote(); }, 2000);
+
+    //function setQuote() {
+    //    if (quoteIdx >= quotes.length) {
+    //        quoteIdx = 0;
+    //        console.log("yeh");
+    //    }
+    //    $("#quote").text(quotes[quoteIdx]);
+    //    $("#author").text(quoteAuthorDict[quotes[quoteIdx]]);
+    //    quoteIdx++;
+    //}
+
     // Video playing hack, kinda messy but it gets the job done
     var videos = $("video").get().reverse();
     for (const video of videos) {
@@ -77,8 +99,5 @@ $(window).on("load", function() {
         $(this).css("display", "none");
         $("#video0").get(0).play();
         $("audio").get(0).play();
-        setTimeout(function() {
-            $("audio").get(1).play();
-        }, 500);
     });
 });
