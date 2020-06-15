@@ -13,13 +13,23 @@ html, body {
 
 h1 {
   width: 100%;
-  font-size: 5em;
+  font-size: 6em;
   text-shadow: 10px 5px #000; }
 
 h2 {
   width: 100%;
-  font-size: 2.5em;
+  font-size: 3em;
   text-shadow: 5px 5px #000; }
+
+h3 {
+  font-size: 6em;
+  text-shadow: 10px 5px #000; }
+
+h4 {
+  width: 1070px;
+  margin-left: 12px;
+  font-size: 0.5em;
+  margin-bottom: 200px; }
 
 audio {
   display: none; }
@@ -30,6 +40,60 @@ video {
   height: 100%;
   background-color: #fff;
   object-fit: cover; }
+
+#main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap; }
+
+#left-container {
+  display: flex;
+  width: 50%;
+  height: 60%;
+  flex-flow: row-reverse; }
+
+#right-container {
+  display: flex;
+  flex-flow: wrap;
+  height: 60%;
+  justify-content: left;
+  align-items: center; }
+
+#bottom-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+#top-container {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #ff0;
+  overflow: hidden;
+  white-space: nowrap; }
+  #top-container #marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    color: #000; }
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+
+#lee-face-container {
+  margin-top: -170px;
+  margin-left: 20px; }
+
+#text-column {
+  height: 100%;
+  margin-top: 100px;
+  width: 65%; }
 
 #playbutton {
   display: flex;
@@ -45,7 +109,7 @@ video {
 #lee-bam-face {
   float: right;
   width: 180px;
-  margin-left: 100px; }
+  margin-left: 10px; }
 
 #bam {
   position: absolute;
@@ -74,7 +138,7 @@ video {
   position: absolute;
   width: 200px;
   margin-top: 190px;
-  margin-left: 30px;
+  margin-left: -80px;
   animation: bam-animation 0.9s ease-in-out alternate infinite; }
 
 #cards {
@@ -84,55 +148,12 @@ video {
 #canvas-container {
   display: flex;
   position: relative;
-  width: 550px;
-  height: 350px;
+  width: 70%;
+  height: 70%;
   align-self: flex-end;
   margin: 30px;
-  border: 10px solid #fff; }
-
-#main-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap; }
-
-#left-container {
-  display: flex;
-  width: 50%;
-  height: 50%;
-  flex-flow: row-reverse; }
-
-#right-container {
-  display: flex;
-  flex-flow: wrap;
-  width: 50%;
-  height: 50%;
-  justify-content: left;
-  align-items: center; }
-
-#bottom-container {
-  display: flex;
-  width: 100%;
-  height: 100%; }
-
-#top-container {
-  display: block;
-  width: 100%;
-  height: 30px;
-  background-color: #ff0;
-  overflow: hidden;
-  white-space: nowrap; }
-  #top-container #marquee {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-    color: #000; }
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0); }
-  100% {
-    transform: translate(-100%, 0); } }
+  border: 10px solid #fff;
+  max-width: 580px; }
 
 .hotbread {
   color: #000;
@@ -143,3 +164,50 @@ video {
     color: #f00; }
   100% {
     color: #000; } }
+
+@media screen and (max-width: 1525px) {
+  #left-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 33%;
+    margin-top: 100px; }
+  #canvas-container {
+    width: 100%;
+    height: 100%;
+    max-width: 100%; }
+  #right-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 25%; }
+  #top-container {
+    height: 70px;
+    font-size: 2.5em; }
+  #text-column {
+    margin-top: 0px; }
+  #bottom-container {
+    width: 100%;
+    height: 33%; }
+  h1 {
+    font-size: 9em; }
+  h2 {
+    font-size: 4.5em; }
+  #cards {
+    width: 400px; }
+  #lee-bam-face {
+    width: 250px; }
+  #bam {
+    width: 250px; }
+  #bam-text {
+    font-size: 1.2em;
+    margin-top: 50px; }
+  #lee-bam-container {
+    margin-top: 250px; }
+  h3 {
+    font-size: 5em; }
+  h4 {
+    font-size: 1.2em;
+    max-width: 900px; }
+  #lee-face-container {
+    margin-top: -100px; } }
