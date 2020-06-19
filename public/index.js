@@ -53,7 +53,8 @@ $(window).on("load", function() {
         "I am on this EP": "Yauvin Akeos",
         "That good feel when Lee Jennings": "Kendal Vanfleet",
         "Cheese": "Jesse Subtronics",
-        "If you like music theres a chance youll like this": "Cooper Oolacile"
+        "If you like music theres a chance youll like this": "Cooper Oolacile",
+        "I have to Poopo": "L.U.X",
     }
     var quotes = Object.keys(quoteAuthorDict);
     var quoteIdx = 0;
