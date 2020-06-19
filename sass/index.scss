@@ -12,12 +12,12 @@ html, body {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 4vw;
     text-shadow: 10px 5px #000;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2vw;
     text-shadow: 5px 5px #000;
 }
 
@@ -47,7 +47,7 @@ h5 {
 }
 
 h6 {
-    font-size: 7em;
+    font-size: 5.85vw;
     text-shadow: 10px 5px #000;
     margin: 20px 0;
 }
@@ -120,7 +120,6 @@ video {
 }
 
 #lee-face-container {
-    margin-left: 20px;
     margin-top: 50px;
 }
 
@@ -234,7 +233,7 @@ video {
     }
 }
 
-@media screen and (max-width: 1306px) {
+@media screen and (max-width: 1200px) {
     #left-container {
         width: 100%;
         align-items: center;
