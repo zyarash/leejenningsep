@@ -74,7 +74,7 @@ $(window).on("load", function() {
         if (quoteIdx >= quotes.length) {
             quoteIdx = 0;
         }
-        $("#quote").text(quotes[quoteIdx]);
+        $("#quote").text(" ‟ " + quotes[quoteIdx] + " ” ");
         $("#author").text(" - " + quoteAuthorDict[quotes[quoteIdx]]);
         quoteIdx++;
     }

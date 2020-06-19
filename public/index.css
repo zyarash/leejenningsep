@@ -11,11 +11,13 @@ html, body {
 
 h1 {
   font-size: 4vw;
-  text-shadow: 10px 5px #000; }
+  text-shadow: 10px 5px #000;
+  margin-bottom: 5px; }
 
 h2 {
   font-size: 2vw;
-  text-shadow: 5px 5px #000; }
+  text-shadow: 5px 5px #000;
+  margin-bottom: 5px; }
 
 h3 {
   font-size: 5vw;
@@ -127,7 +129,6 @@ video {
   width: 300px;
   flex-wrap: wrap;
   flex-flow: column;
-  margin-top: 10px;
   justify-content: center;
   height: 120px; }
   #quote-container > #quote {
