@@ -56,8 +56,9 @@ $(window).on("load", function() {
         "If you like music theres a chance you'll like this": "Cooper Oolacile",
         "I have to Poopo": "L.U.X",
         "I left my dog in Ethiopia": "Kaimen Hukae",
-        "Please save me from Lee Jenning basement": "Aaaron Jub",
+        "Please save me from Lee Jenning basement": "Aarron Jub",
         "Has anyone seen my shoe": "Cam Phonon",
+        "No": "Máté Moley",
     }
     var quotes = Object.keys(quoteAuthorDict);
     var quoteIdx = 0;
