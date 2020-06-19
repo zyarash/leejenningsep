@@ -19,18 +19,6 @@ function isMobileDevice() {
 
 // Onload
 $(window).on("load", function() {
-    
-    var presaveColor = "#fff";
-    setInterval(function() {
-        if (presaveColor == "#fff") {
-            presaveColor = "#ff0";
-        }
-        else {
-            presaveColor = "#fff";
-        }
-        $("#presave").css("color", presaveColor);
-    }, 1000);
-
     var leeFaceTransform = 1; 
     setInterval(function() {
         if (leeFaceTransform == 1) {
@@ -63,7 +51,9 @@ $(window).on("load", function() {
         "I listened to it": "Keith Sub Antix",
         "Good bing bing bong music": "Nolan Syzy",
         "I am on this EP": "Yauvin Akeos",
-        "That good feel when Lee Jennings": "Kendal Vanfleet"
+        "That good feel when Lee Jennings": "Kendal Vanfleet",
+        "Cheese": "Jesse Subtronics",
+        "If you like music theres a chance youll like this": "Cooper Oolacile"
     }
     var quotes = Object.keys(quoteAuthorDict);
     var quoteIdx = 0;
@@ -100,5 +90,19 @@ $(window).on("load", function() {
         $(this).css("display", "none");
         $("#video0").get(0).play();
         $("audio").get(0).play();
+    });
+
+    $("#presave").on("click", function() {
+        window.open("https://nsd.presave.io/t/NSDBL106", "_blank");
+    });
+
+    $("#presave").on("mouseenter", function() {
+        document.body.style.cursor = "pointer";
+        $("h2").css("animation", "none");
+    });
+
+    $("#presave").on("mouseout", function() {
+        document.body.style.cursor = "default";
+        $("h2").css("animation", "blinking 1s linear infinite");
     });
 });

@@ -20,7 +20,17 @@ h1 {
 h2 {
     font-size: 2vw;
     text-shadow: 5px 5px #000;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    animation: blinking 1s linear infinite;
+
+    @keyframes blinking {
+        0%, 49% { color: #fff }
+        50%, 100% { color: #ff0 }
+    }
+}
+
+h2:hover {
+    color: #f00;
 }
 
 h3 {
@@ -207,8 +217,11 @@ video {
 }
 
 #cards {
-    margin-top: 10px;
-    width: 250px;
+    width: 350px;
+}
+
+#payments {
+    margin: 3px 0 10px 0;
 }
 
 #canvas-container {
@@ -277,7 +290,7 @@ video {
     }
     
     h2 {
-       font-size: 4.5em;
+       font-size: 3.5em;
     }
 
     #cards {
@@ -304,6 +317,7 @@ video {
 
     h3 {
         font-size: 5em;
+        margin: 0 0 10px 0;
     }
 
     h4 {
@@ -327,5 +341,9 @@ video {
     
     h5 {
         font-size: 2em;
+    }
+
+    #quote-container {
+        width: 500px;
     }
 }
