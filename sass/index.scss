@@ -19,6 +19,12 @@ h1 {
     text-shadow: 10px 5px #000;
 }
 
+h6 {
+    font-size: 6.9em;
+    text-shadow: 10px 5px #000;
+    margin-top: 30px;
+}
+
 h2 {
     width: 100%;
     font-size: 3em;
@@ -33,14 +39,14 @@ h3 {
 h4 {
     width: 1070px;
     margin-left: 12px;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 h5 {
     display: inline-flex;
     font-size: 2em;
-    width: 1070px;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -71,33 +77,39 @@ video {
 #left-container {
     display: flex;
     width: 50%;
-    height: 60%;
-    flex-flow: row-reverse;
+    height: 50%;
+    flex-flow: column;
 }
 
 #right-container {
     display: flex;
     flex-flow: wrap;
-    height: 60%;
-    justify-content: left;
-    align-items: center;
 }
 
 #bottom-container {
     display: flex;
     width: 100%;
-    height: 300px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+#top-title-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #top-container {
-    display: block;
+    display: flex;
     width: 100%;
     height: 30px;
     background-color: #ff0;
     overflow: hidden;
     white-space: nowrap;
+    align-items: center;
+    justify-content: center;
 
     #marquee {
         display: inline-block;
@@ -113,14 +125,14 @@ video {
 }
 
 #lee-face-container {
-    margin-top: -170px;
     margin-left: 20px;
+    margin-top: 50px;
 }
 
 #text-column {
-    height: 100%;
-    margin-top: 30%;
-    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 #playbutton {
@@ -139,14 +151,22 @@ video {
 
 #quote-container {
     display: flex;
-    align-items: center;
-    height: 270px;
     font-style: italic;
     font-size: 1.6em;
     text-shadow: 5px 5px #000;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    margin-top: 10px;
+    justify-content: center;
+    height: 120px; 
 
     & > #quote {
         font-weight: bold;
+    }
+
+    & > #author {
+        margin-left: 50px;
     }
 }
 
@@ -166,7 +186,7 @@ video {
 #bam-text {
     position: absolute;
     font-size: 1em;
-    transform: rotate(15deg);
+    transform: rotate(15.7deg);
     color: #fff;
     white-space: nowrap;
     z-index: 2;
@@ -201,11 +221,12 @@ video {
     display: flex;
     position: relative;
     width: 70%;
-    height: 70%;
+    height: 80%;
     align-self: flex-end;
     margin: 30px;
     border: 10px solid #fff;
     max-width: 580px;
+    min-width: 560px;
 }
 
 .hotbread {
@@ -218,19 +239,18 @@ video {
     }
 }
 
-@media screen and (max-width: 1525px) {
+@media screen and (max-width: 1306px) {
     #left-container {
         width: 100%;
         align-items: center;
         justify-content: center;
         height: 33%;
-        margin-top: 100px;
     }
 
     #canvas-container {
         width: 100%;
         height: 100%;
-        max-width: 100%;
+        max-width: 90%;
     }
     
     #right-container {
@@ -252,6 +272,7 @@ video {
     #bottom-container {
         width: 100%;
         height: 33%;
+        margin-top: 0px;
     }
 
     h1 {
@@ -268,6 +289,7 @@ video {
 
     #lee-bam-face {
         width: 250px;
+        margin-top: 30px;
     }
 
     #bam {
@@ -280,10 +302,11 @@ video {
     }
 
     #lee-bam-container {
-        margin-top: 250px;
+        margin-top: 300px;
     }
 
     h3 {
+        margin-top: 30px;
         font-size: 5em;
     }
 
@@ -294,5 +317,14 @@ video {
 
     #lee-face-container {
         margin-top: -100px;
+        margin-left: 0px;
+    }
+
+    h6 {
+        font-size: 5em;
+    }
+
+    #number {
+        height: 90px;
     }
 }

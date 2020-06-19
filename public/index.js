@@ -17,6 +17,7 @@ function isMobileDevice() {
 }
 
 
+// Onload
 $(window).on("load", function() {
     
     var presaveColor = "#fff";
@@ -61,21 +62,21 @@ $(window).on("load", function() {
         "Waalazinga": "Maxwell UBUR",
         "I listened to it": "Keith Sub Antix",
         "Good bing bing bong music": "Nolan Syzy",
-        "Tom Flanders Oregon Trail. Macintosh Flanders click click space bar Tom. Fland gers. T o": "Yauvin Akeos"
+        "Tom Flanders Oregon Trail. Macintosh Flanders click click space bar Tom. Fland gers. T o": "Yauvin Akeos",
+        "That good feel when Lee Jennings": "Kendal Vanfleet"
     }
     var quotes = Object.keys(quoteAuthorDict);
     var quoteIdx = 0;
     setQuote();
-    setInterval(function() { setQuote(); }, 2000);
+    setInterval(function() { setQuote(); }, 2500);
 
     function setQuote() {
-        //if (quoteIdx >= quotes.length) {
-        //    quoteIdx = 0;
-        //    console.log("yeh");
-        //}
-        //$("#quote").text(quotes[quoteIdx]);
-        //$("#author").text(quoteAuthorDict[quotes[quoteIdx]]);
-        //quoteIdx++;
+        if (quoteIdx >= quotes.length) {
+            quoteIdx = 0;
+        }
+        $("#quote").text(quotes[quoteIdx]);
+        $("#author").text(" - " + quoteAuthorDict[quotes[quoteIdx]]);
+        quoteIdx++;
     }
 
     // Video playing hack, kinda messy but it gets the job done
