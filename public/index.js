@@ -62,7 +62,7 @@ $(window).on("load", function() {
         "Waalazinga": "Maxwell UBUR",
         "I listened to it": "Keith Sub Antix",
         "Good bing bing bong music": "Nolan Syzy",
-        "Tom Flanders Oregon Trail. Macintosh Flanders click click space bar Tom. Fland gers. T o": "Yauvin Akeos",
+        "I am on this EP": "Yauvin Akeos",
         "That good feel when Lee Jennings": "Kendal Vanfleet"
     }
     var quotes = Object.keys(quoteAuthorDict);
