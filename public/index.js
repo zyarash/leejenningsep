@@ -59,7 +59,7 @@ $(window).on("load", function() {
 
     var quoteAuthorDict = {
         "Get hit by a bus": "Robert Phiso",
-        "Waalazinga": "Maxwell UBUR",
+        "If": "Maxwell UBUR",
         "I listened to it": "Keith Sub Antix",
         "Good bing bing bong music": "Nolan Syzy",
         "I am on this EP": "Yauvin Akeos",

@@ -22,19 +22,19 @@ h2 {
 }
 
 h3 {
-    font-size: 6em;
+    font-size: 5vw;
     text-shadow: 10px 5px #000;
     margin: 20px 0 10px 0;
 }
 
 h4 {
     width: 1070px;
-    margin: 10px 0 10px 12px;
-    font-size: 0.8em;
+    margin: 10px 10% 10px 10%;
+    font-size: 0.7vw;
 }
 
 h5 {
-    font-size: 2em;
+    font-size: 1.4vw;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -109,7 +109,6 @@ video {
 
 #right-container {
     display: flex;
-    flex-flow: wrap;
 }
 
 #bottom-container {
@@ -127,6 +126,7 @@ video {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    margin-right: 10%;
 }
 
 #playbutton {
@@ -148,7 +148,7 @@ video {
     font-style: italic;
     font-size: 1.6em;
     text-shadow: 5px 5px #000;
-    width: 400px;
+    width: 300px;
     flex-wrap: wrap;
     flex-flow: column;
     margin-top: 10px;
@@ -167,7 +167,6 @@ video {
 #lee-bam-face {
     float: right;
     width: 180px;
-    margin-left: 10px;
 }
 
 #bam {
@@ -220,7 +219,7 @@ video {
     margin: 0 35px 0 0;
     border: 10px solid #fff;
     max-width: 580px;
-    min-width: 560px;
+    min-width: 450px;
 }
 
 .hotbread {
@@ -233,7 +232,7 @@ video {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     #left-container {
         width: 100%;
         align-items: center;
@@ -263,7 +262,7 @@ video {
     }
     
     #text-column {
-        margin-top: 0px;
+        margin-right: 0px;
     }
 
     #bottom-container {
@@ -309,6 +308,7 @@ video {
     h4 {
         font-size: 1.2em;
         max-width: 900px;
+        margin: 10px 0 10px 12px;
     }
 
     #lee-face-container {
@@ -322,5 +322,9 @@ video {
 
     #number {
         height: 90px;
+    }
+    
+    h5 {
+        font-size: 2em;
     }
 }
