@@ -47,6 +47,7 @@ $(window).on("load", function() {
 
     var quoteAuthorDict = {
         "Get hit by a bus": "Robert Phiso",
+        "Whoever signed this is fired": "Tommy SKisM",
         "If": "Maxwell UBUR",
         "I listened to it": "Keith Sub Antix",
         "Good bing bing bong music": "Nolan Syzy",
